@@ -4,6 +4,8 @@ MAINTAINER London App Developer Ltd
 
 ENV PYTHONUNBUFFERED 1
 
+RUN apk update && apk add bash
+
 COPY ./requirements.txt /requirements.txt
 
 RUN pip install -r ./requirements.txt
